@@ -1,0 +1,242 @@
+/* cimg>panel-winners-sg */
+.cimg.panel-winners-sg {
+  background-image: url(../image/panel-winners-sg.png);
+  width: 0.9rem;
+  height: 0.2rem;
+}
+/* cimg>sg-close */
+.cimg.sg-close {
+  background-image: url(../image/sg-close.png);
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.cimg.sg-close.btnClose {
+  background-size: 0.4rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid #fff 0.04rem;
+  border-radius: 100%;
+}
+/* cimg>sg-cry */
+.cimg.sg-cry {
+  background-image: url(../image/sg-cry.png);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+/* cimg>bg-alert2-1 */
+.cimg.bg-alert2-1 {
+  background-image: url(../image/bg-alert2-1.png);
+  width: 1.9rem;
+  height: 0.9rem;
+}
+/* cimg>bg-alert2-5-1 */
+.cimg.bg-alert2-5-1 {
+  background-image: url(../image/bg-alert2-5-1.png);
+  width: 4.2rem;
+  height: 3.42rem;
+}
+/* cimg>bg-alert2-5-2 */
+.cimg.bg-alert2-5-2 {
+  background-image: url(../image/bg-alert2-5-2.png);
+  width: 3.75rem;
+  height: 3.2rem;
+}
+/* cimg>bg-alert2-3-4 */
+.cimg.bg-alert2-3-4 {
+  background-image: url(../image/bg-alert2-3-4.png);
+  width: 1.1rem;
+  height: 0.5rem;
+}
+/* cimg>bg-alert2-4 */
+.cimg.bg-alert2-4 {
+  background-image: url(../image/bg-alert2-4.png);
+  width: 0.5rem;
+  height: 0.4rem;
+}
+/* cimg>sg-succ */
+.cimg.sg-succ {
+  background-image: url(../image/sg-succ.png);
+  width: 3.3rem;
+  height: 1.4rem;
+}
+/* cimg>bg-alert2-5-2 */
+.cimg.bg-alert2-5-2 {
+  background-image: url(../image/bg-alert2-5-2.png);
+  width: 3.75rem;
+  height: 3.2rem;
+}
+.ui-btn-sty1 {
+  background-color: #d8cd21;
+  padding-bottom: 0.08rem;
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 0.05rem 0.05rem 0 rgba(0, 0, 0, 0.2);
+}
+.ui-btn-sty1 b {
+  background-color: #fff11f;
+  text-align: center;
+  font-size: 0.32rem;
+  line-height: 0.7rem;
+  color: #f33529;
+  height: 0.7rem;
+  padding: 0 1em;
+  display: inline-block;
+  border-radius: 3px;
+  text-shadow: 0.03rem 0.03rem 0 rgba(0, 0, 0, 0.2);
+}
+.ui-alert1 {
+  background: transparent url('../image/bg-alert1.png') no-repeat 0 0;
+  background-size: 5.9rem 0.72rem;
+  width: 5.9rem;
+  color: #fff;
+  padding-top: 0.72rem;
+  position: relative;
+}
+.ui-alert1 .ui-alert1-bd {
+  background: #f33529;
+  width: 5.3rem;
+  margin-left: 0.26rem;
+  overflow: hidden;
+}
+.ui-alert1 .ui-alert1-ft {
+  background: transparent url('../image/bg-alert1-2.png') no-repeat 0 100%;
+  background-size: 5.9rem 1.56rem;
+  height: 1.56rem;
+  width: 5.9rem;
+  overflow: hidden;
+}
+.ui-alert2 {
+  color: #fff;
+  position: relative;
+}
+.ui-alert2 .ui-alert2-sg {
+  position: relative;
+}
+.ui-alert2 .ui-alert2-bd {
+  background: #f33529;
+  text-align: center;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.ui-alert2 .ui-alert2-ft {
+  background: #8d1109;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #fefea6;
+  display: block;
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+.ui-text-sty1-box {
+  background-color: #8d1109;
+  padding: 0 0.5em;
+}
+input.ui-text-sty1 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #fff;
+}
+input.ui-text-sty1::-webkit-input-placeholder {
+  color: #fff;
+}
+select.ui-text-sty1 {
+  font-size: 0.18rem;
+}
+textarea.ui-text-sty1 {
+  border: none;
+  background: none;
+  background-color: #8d1109;
+  line-height: 0.5rem;
+  font-size: 0.26rem;
+  color: #fff;
+  padding: 0 0.5em;
+  -webkit-box-sizing: border-box;
+  resize: none;
+}
+.ui-prize {
+  background-color: #b70b00;
+  width: 1.65rem;
+  height: 1.65rem;
+  display: inline-block;
+  position: relative;
+  border-radius: 0.12rem;
+}
+.ui-prize div {
+  background: #f33529 url('../image/panel-game-sgbg.png') no-repeat 0 0;
+  background-size: 1.7rem 1.7rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: -0.85rem;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  top: -0.1rem;
+  border: solid transparent 0.04rem;
+  border-radius: 0.16rem;
+  -webkit-box-sizing: border-box;
+}
+.ui-prize div span {
+  text-align: center;
+  font-size: 0.22rem;
+  display: inline-block;
+}
+.ui-prize div span img {
+  width: 1.6rem;
+  height: 1.1rem;
+  display: block;
+}
+.ui-prize div span b {
+  display: inline-block;
+  padding-top: 0.05rem;
+}
+.ui-prize div span b b {
+  font-size: 0.26rem;
+  padding-top: 0;
+  padding-right: 0.5em;
+}
+.ui-prize.active div {
+  border-color: #fff;
+}
+.ui-lottery {
+  background-color: #fff11f;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  border-radius: 0.12rem;
+}
+.ui-lottery span {
+  font-weight: 600;
+  font-size: 0.6rem;
+  color: #f33529;
+  text-shadow: 0.03rem 0.05rem 0 #ecde14;
+  /* width: 2em; */
+  display: inline-block;
+  text-align: center;
+}
+.ui-lottery span b {
+  display: block;
+  font-size: 0.3rem;
+}
+.ui-smask {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*# sourceMappingURL=ui.css.map */

@@ -1,0 +1,105 @@
+注意：以下接口均有referer过滤，不要用ip方式访问
+
+1、获取奖品配置的接口
+	url：http://czl.pconline.com.cn:8094/online160324/action/getAwardConfig.jsp
+	接收参数:
+		callback：跨域参数（选填，默认为callback）
+	返回内容：
+		{"code":1,"msg":"获取奖品配置成功","configs"：[]}
+		{"code":500,"msg":"获取奖品失败"}
+
+返回成功示例：
+callback({"configs":[{"awardType":1,"picUrl":"yyyyyyy.jpg","percent":30,"prize":20,"awardName":"奖品1","configId":1}],"code":"1","msg":"获取奖品配置成功"}
+
+其中，configId：奖品配置ID，awardName:奖品名，awardType：奖品类型（1：积分奖   2：实物奖），prize：价值，picUrl:图片URL
+
+
+
+2、获取中奖名单的接口：
+	url：http://czl.pconline.com.cn:8094/online160324/action/getLottery.jsp
+	接收参数:
+		callback：跨域参数（选填，默认为callback）
+	返回内容：
+		{"code":1,"msg":"获取名单成功","lotterys":[]}
+		{"code":500,"msg":"获取名单失败"}
+
+返回成功示例：
+callback({"code":"1","lotterys":[{"account":"13580320170","awardName":"奖品8"}],"msg":"获取名单成功"})
+
+其中，account：帐号，awardName:奖品名
+
+
+
+3、获取用户信息的接口：
+	url：http://czl.pconline.com.cn:8094/online160324/action/getUserInfo.jsp
+	接收参数：
+		callback：选填
+		account：必填
+		key:：必填
+
+	返回内容：
+		{"code":-1,"msg":"参数不能为空"}
+		{"code":-2,"msg":"有钱划获取用户信息接口调不通"}
+		{"code":500,"msg":"网络繁忙，获取用户信息失败"}
+		{"code":0,"msg":"有钱划接口未成功获取到用户信息，可能无用户或其它原因"}
+		{"code":1,"msg":"获取用户信息成功","phone":"13612312345","name":"名字","addr":"广东省-广州市-天河区-太平洋网络","postcode":"510000"}
+
+
+
+4、抽奖的接口：
+	url：http://czl.pconline.com.cn:8094/online160324/action/lottery.jsp
+	接收参数：
+		callback：选填
+		account：必填
+		key:：必填
+
+	返回内容：
+		{"code":-1,"msg":"参数不能为空"}
+		{"code":-2,"msg":"用户积分不足"}
+		{"code":-3,"msg":"有钱划减积分接口调不通"}
+		{"code":-4,"msg":"调有钱划接口扣除积分失败"}
+		{"code":-5,"msg":"无用户或请求参数有错"}
+		{"code":500,"msg":"抽奖失败，请稍后再试"}
+		{"code":1,"msg":"抽奖成功","configId":抽中的奖品配置ID}
+
+
+
+5、修改用户信息的接口：
+	url：http://czl.pconline.com.cn:8094/online160324/action/submitInfo.jsp
+	接收参数：
+		callback：选填
+		account：必填
+		key:：必填
+		realName：姓名
+		phone:手机号码
+		postCode：邮编
+		addr：地址，按 省-市-区-具体地址 的格式传
+
+	返回内容：
+		{"code":-1,"msg":"account参数不能为空"}
+		{"code":-2,"msg":"key参数不能为空"}
+		{"code":-3,"msg":"有钱划修改用户信息接口调不通"}
+		{"code":-4,"msg":"有钱划接口修改信息失败，可能无用户或其他原因"}
+		{"code":-5,"msg":"请输入正确的手机号码"}
+		{"code":500,"msg":"网络繁忙，修改用户信息失败"}
+		{"code":1,"msg":"修改用户信息成功"}
+
+
+
+6、获取用户积分的接口：
+	url：http://czl.pconline.com.cn:8094/online160324/action/getUserScore.jsp
+	接收参数:
+		callback：跨域参数（选填，默认为callback）
+		account：必填
+		key:必填
+	返回内容：
+		{"code":-1,"msg":"参数不能为空"}
+		{"code":-2,"msg":"有钱划获取用户积分接口调不通"}
+		{"code":0,"msg":"有钱划接口未成功获取到用户积分"}
+		{"code":500,"msg":"网络繁忙，获取用户积分失败"}
+		{"code":1,"score":"3386","account":"13612312345","msg":"获取用户积分成功"}
+
+返回成功示例：
+callback({"code":1,"score":"3386","account":"13612312345","msg":"获取用户积分成功"})
+
+其中，score：用户积分
